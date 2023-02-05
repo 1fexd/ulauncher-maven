@@ -9,24 +9,22 @@
       "id": "mvn",
       "type": "keyword",
       "name": "Maven repository",
-      "default_value": "mvn",
+      "default_value": "mvn"
+    },
+    {
+      "id": "latest",
+      "type": "select",
+      "name": "Open latest version",
+      "description": "Automatically opens the page of the latest version of the library",
+      "default_value": "No",
       "options": [
         {
-          "id": "latest",
-          "type": "select",
-          "name": "Open latest version",
-          "description": "Automatically opens the page of the latest version of the library",
-          "default_value": "No",
-          "options": [
-            {
-              "value": "Yes",
-              "text": "Yes"
-            },
-            {
-              "value": "No",
-              "text": "No"
-            }
-          ]
+          "value": "Yes",
+          "text": "Yes"
+        },
+        {
+          "value": "No",
+          "text": "No"
         }
       ]
     }
