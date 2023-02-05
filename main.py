@@ -22,7 +22,7 @@ class KeywordQueryEventListener(EventListener):
     __MAVEN_BASE_URL = "https://mvnrepository.com"
 
     def on_event(self, event: KeywordQueryEvent, extension: MavenRepositoryExtension):
-        open_latest = extension.preferences.get("open_latest") == "Yes"
+        open_latest = extension.preferences.get("latest") == "Yes"
 
         items = []
         argument = event.get_argument()
